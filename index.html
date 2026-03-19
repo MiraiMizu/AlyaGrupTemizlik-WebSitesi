@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alya Grup - Premium Temizlik Hizmetleri ve Plus+ Ürünleri</title>
+    <meta name="description"
+        content="Alya Grup ile profesyonel temizlik hizmetleri ve Plus+ marka temizlik ürünleri. Ev ve ofis temizliğinde güvenilir adres.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+    <!-- SVG Filter for Logo Background Removal -->
+    <svg style="width:0; height:0; position:absolute;" aria-hidden="true">
+        <filter id="remove-white-bg">
+            <feColorMatrix type="matrix" values="1 0 0 0 0  
+                                                 0 1 0 0 0  
+                                                 0 0 1 0 0  
+                                                 -1 0 0 0 1" />
+        </filter>
+    </svg>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="New logo.png" alt="Alya Grup Logo" class="logo-img">
+            </a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <span class="toggle-icon">🌙</span>
+            </button>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#products">Plus+ Ürünler</a></li>
+                <li><a href="#experience">Deneyimimiz</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-btn">Fiyat Sorgula</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title"><span class="text-highlight">Plus+</span> Kalitesiyle<br>Kusursuz Temizlik</h1>
+            <p class="hero-subtitle">Alya Grup güvencesiyle eviniz ve ofisiniz için profesyonel temizlik çözümleri ve
+                premium temizlik ürünleri.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Fiyat Sorgula</a>
+                <a href="#products" class="btn btn-secondary">Ürünlerimizi İncele</a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="badge">
+                    <span class="badge-icon">🛡️</span>
+                    <span>Güvenilir Hizmet</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">🚚</span>
+                    <span>Hızlı Teslimat</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">⭐</span>
+                    <span>%100 Müşteri Memnuniyeti</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Hizmet Verdiğimiz Sektörler</h2>
+                <p>Kurumsal İşletmeler İçin Profesyonel Tedarik Çözümleri</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">🏨</div>
+                    <h3>Otel & Konaklama</h3>
+                    <p>Oteller için buklet malzemeleri, genel alan ve oda temizlik kimyasalları tedariği.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🏥</div>
+                    <h3>Hastane & Sağlık</h3>
+                    <p>Medikal hijyen standartlarına uygun, yüksek düzey dezenfektan ve temizleyici ürünler.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🏭</div>
+                    <h3>Fabrika & Sanayi</h3>
+                    <p>Ağır yağ ve kir sökücüler, endüstriyel temizlik makineleri ve teknik kimyasallar.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🍽️</div>
+                    <h3>Restoran & Kafe</h3>
+                    <p>Mutfak hijyeni, bulaşık deterjanları ve yüzey temizleyiciler için toptan çözümler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding bg-light products-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Plus+ Temizlik Ürünleri</h2>
+                <p class="section-desc">Kendi markamız olan Plus+ ile temizlikte yeni bir standart.</p>
+            </div>
+            <div class="products-grid">
+                <!-- 1. Ürün: Havlu Kağıt & Peçete -->
+                <div class="product-card">
+                    <img src="havlu.png" alt="Plus+ Havlu Kağıt ve Peçete" class="product-img">
+                    <div class="product-info">
+                        <h3>Plus+ Z-Katlama Havlu & Peçete</h3>
+                        <p>Profesyonel kullanım için yüksek emiciliğe sahip endüstriyel kağıt ürünleri.</p>
+                    </div>
+                </div>
+                <!-- 2. Ürün: Ultra Çamaşır Suyu -->
+                <div class="product-card">
+                    <img src="camasir_suyu.png" alt="Plus+ Ultra Çamaşır Suyu" class="product-img">
+                    <div class="product-info">
+                        <h3>Plus+ Ultra Çamaşır Suyu (5kg)</h3>
+                        <p>Zorlu lekeler ve maksimum hijyen için ekstra yoğun kıvamlı profesyonel çözüm.</p>
+                    </div>
+                </div>
+                <!-- 3. Ürün: Yapay Zeka ile Üretilen -->
+                <div class="product-card">
+                    <img src="plus_surface_cleaner.png" alt="Plus+ Yüzey Temizleyici" class="product-img">
+                    <div class="product-info">
+                        <h3>Plus+ Yüzey Temizleyici (5kg)</h3>
+                        <p>Mis kokusuyla tüm yüzeylerde derinlemesine temizlik, pırıl pırıl parlaklık.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="http://katalog.alyagrup.com" target="_blank" class="btn btn-secondary">
+                    📚 Daha Fazla Ürün / E-Katalog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Why Choose Us) -->
+    <section id="experience" class="section-padding experience-section">
+        <div class="container experience-grid">
+            <!-- Image Content -->
+            <div class="experience-image">
+                <img src="warehouse_inventory.png" alt="Alya Grup Depo ve Stok" class="exp-img">
+
+            </div>
+
+            <!-- Text Content -->
+            <div class="experience-content">
+                <h2>Alya Grup Güvencesi</h2>
+                <p class="subtitle">Toptan Temizlik Ürünlerinde Çözüm Ortağınız</p>
+                <p>
+                    Alya Grup olarak, sektörün ihtiyaç duyduğu
+                    yüksek kaliteli temizlik ürünlerini tedarik eden <strong>ana bayiyiz.</strong>
+                </p>
+                <p>
+                    Hastanelerden otellere, fabrikalardan kurumsal firmalara kadar geniş bir yelpazede,
+                    kendi markamız olan <strong>Plus+</strong> ürünleri ile profesyonel hijyen çözümleri sunuyoruz.
+                    Güçlü stok yapımız ve hızlı lojistik ağımız ile işletmenizin temizlik tedariğini
+                    kesintisiz sağlıyoruz.
+                </p>
+                <ul class="features-list">
+                    <li>
+                        <span class="icon">🏭</span>
+                        <div>
+                            <h4>Doğrudan Üreticiden</h4>
+                            <p>Aracı olmadan, en uygun fiyatlarla toptan satış.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">🚛</span>
+                        <div>
+                            <h4>Hızlı Lojistik</h4>
+                            <p>Ankara içi aynı gün, şehir dışı hızlı kargo imkanı.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">💼</span>
+                        <div>
+                            <h4>Kurumsal Çözümler</h4>
+                            <p>İşletmenize özel ödeme ve tedarik planlaması.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="section-padding reviews-section bg-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Müşterilerimiz Ne Diyor?</h2>
+                <p class="section-desc">Mutlu müşterilerimizin deneyimleri.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Hastanemizin hijyen standartları çok yüksek. Alya Grup'un profesyonel ekibi
+                        ve Plus+ ürünleri, sterilizasyon konusunda beklentimizin çok üzerinde..."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">A</div>
+                        <div class="reviewer-info">
+                            <h4>Ayşe Y.</h4>
+                            <span>Hastane Müdürü</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Müşteri memnuniyeti mutfak temizliğiyle başlar. Plus+ yağ çözücüleri
+                        sayesinde mutfağımız her zaman pırıl pırıl."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">M</div>
+                        <div class="reviewer-info">
+                            <h4>Mehmet K.</h4>
+                            <span>Restoran Zinciri Sahibi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Misafirlerimiz için odaların temizliği en önemli kriterdir. Alya Grup ile
+                        çalışmaya başladığımızdan beri memnuniyet oranımız arttı."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">Z</div>
+                        <div class="reviewer-info">
+                            <h4>Zeynep T.</h4>
+                            <span>Otel Müdürü</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">İletişime Geçin</h2>
+                    <p>Plus+ ürünlerimiz hakkında bilgi almak için bize ulaşın.</p>
+                    <a href="https://wa.me/905331393328" target="_blank" class="btn btn-success"
+                        style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem; background-color: #25D366; border: none; color: white;">
+                        <span style="font-size: 1.2rem;">📱</span> WhatsApp ile İletişime Geç
+                    </a>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <p>+90 533 139 3328</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">✉️</span>
+                            <p>ornek@gmail.com</p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Alya+Grup+Temizlik+Lalegül+Mahallesi+358.+Cd.+68/b+06200+Yenimahalle/Ankara"
+                            target="_blank" class="contact-item" style="text-decoration: none; color: inherit;">
+                            <span class="icon">📍</span>
+                            <p>Lalegül Mah. 358. Cd. 68/B, Yenimahalle/Ankara</p>
+                        </a>
+                    </div>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <h3>Teklif Formu</h3>
+                    <div class="form-group">
+                        <label for="name">Ad Soyad</label>
+                        <input type="text" id="name" required placeholder="Adınız Soyadınız">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta Adresi</label>
+                        <input type="email" id="email" required placeholder="ornek@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" rows="3"
+                            placeholder="Bize nasıl yardımcı olabileceğimizi anlatın"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="New logo.png" alt="Alya Grup Logo" class="logo-img">
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Hizmet Şartları</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 Alya Grup. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
