@@ -733,9 +733,13 @@ h6 {
         flex-direction: column;
     }
 
-    .btn {
+    .hero-btns .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .btn-success {
+        width: fit-content !important;
     }
 }
 
