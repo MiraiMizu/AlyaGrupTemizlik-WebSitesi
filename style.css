@@ -107,25 +107,25 @@ h6 {
 }
 
 .bg-white {
-    background-color: var(--bg-white);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .section-padding {
     padding: 6rem 0;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Background floating orbs for sections */
 .bg-orb {
     position: absolute;
-    width: 50vw;
-    height: 50vw;
-    min-width: 400px;
-    min-height: 400px;
+    width: 60vw;
+    height: 60vw;
+    min-width: 500px;
+    min-height: 500px;
     border-radius: 50%;
     filter: blur(80px);
-    opacity: 0.25;
+    opacity: 0.45;
     z-index: 0;
     pointer-events: none;
     animation: orb-drift 20s infinite alternate ease-in-out;
@@ -302,8 +302,8 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 8rem 0 4rem;
-    overflow: hidden;
-    background-color: var(--bg-light); /* Fallback */
+    overflow-x: hidden;
+    background-color: transparent; /* Changed to blend with subsequent sections */
 }
 
 /* Base container for the mesh */
@@ -313,8 +313,10 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: visible; /* Let the blobs softly bleed into the next section */
     z-index: 0;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
 /* Glass effect to blend the blobs */
@@ -335,7 +337,7 @@ h6 {
     position: absolute;
     border-radius: 50%;
     filter: blur(40px);
-    opacity: 0.7;
+    opacity: 0.9;
     animation: float 12s infinite ease-in-out alternate;
     z-index: 1;
 }
@@ -833,7 +835,7 @@ h6 {
 
 /* Products Section */
 .products-section {
-    background-color: var(--bg-light);
+    background-color: transparent; /* Changed from var(--bg-light) to let the orbs flow */
 }
 
 .products-grid {
