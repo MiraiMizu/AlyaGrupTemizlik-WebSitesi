@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Scroll Reveal Animation (Intersection Observer)
-    const revealElements = document.querySelectorAll('.service-card, .experience-content, .review-card, .contact-wrapper');
+    const revealElements = document.querySelectorAll('.service-card, .product-card, .experience-image, .experience-content, .review-card, .contact-wrapper');
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -80,6 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => {
         el.classList.add('hidden');
         revealObserver.observe(el);
+    });
+
+    // Add stagger delay to grid items
+    document.querySelectorAll('.services-grid, .products-grid, .reviews-grid').forEach(grid => {
+        const cards = grid.querySelectorAll('.service-card, .product-card, .review-card');
+        cards.forEach((card, index) => {
+            card.style.setProperty('--delay', `${index * 0.15}s`);
+        });
     });
 
     // Dark mode REMOVED — clear any saved preference
