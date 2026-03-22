@@ -26,20 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Smooth Scroll for anchor links (polyfill support if needed, but CSS scroll-behavior usually handles it)
+    // Smooth Scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
+                target.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
 
-    // Simple Form Submission Handler (Prevents default for demo)
+    // Simple Form Submission Handler
     const bookingForm = document.getElementById('bookingForm');
     if (bookingForm) {
         bookingForm.addEventListener('submit', (e) => {
@@ -47,12 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = bookingForm.querySelector('button[type="submit"]');
             const originalText = btn.innerText;
 
-            btn.innerText = 'Sending...';
+            btn.innerText = 'Gönderiliyor...';
             btn.disabled = true;
 
-            // Simulate API call
             setTimeout(() => {
-                btn.innerText = 'Message Sent!';
+                btn.innerText = 'Gönderildi!';
                 btn.classList.add('success');
                 bookingForm.reset();
 
@@ -81,33 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     revealElements.forEach(el => {
-        el.classList.add('hidden'); // Add initial hidden state via JS to ensure accessibility if JS fails
+        el.classList.add('hidden');
         revealObserver.observe(el);
     });
-    // Theme Toggle Logic
-    const themeToggle = document.getElementById('theme-toggle');
-    const toggleIcon = themeToggle.querySelector('.toggle-icon');
-    const htmlElement = document.documentElement;
 
-    // Check for saved user preference, if any, on load of the website
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-
-    htmlElement.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'dark') {
-        toggleIcon.textContent = '☀️';
-    } else {
-        toggleIcon.textContent = '🌙';
-    }
-
-    themeToggle.addEventListener('click', () => {
-        if (htmlElement.getAttribute('data-theme') === 'dark') {
-            htmlElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-            toggleIcon.textContent = '🌙';
-        } else {
-            htmlElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-            toggleIcon.textContent = '☀️';
-        }
-    });
+    // Dark mode REMOVED — clear any saved preference
+    localStorage.removeItem('theme');
 });

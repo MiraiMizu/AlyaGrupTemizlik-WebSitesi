@@ -40,29 +40,6 @@
     --hover-bg: #1e293b;
 }
 
-[data-theme="light"] {
-    --primary-color: #6A00FF;
-    --primary-dark: #5800cc;
-    --secondary-color: #f3e8ff;
-    --accent-color: #7c3aed;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --bg-white: #ffffff;
-    --bg-light: #f8fafc;
-    --glass-bg: rgba(255, 255, 255, 0.8);
-    --glass-border: rgba(106, 0, 255, 0.1);
-
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-
-    /* Component Backgrounds Light */
-    --product-bg: #ffffff;
-    --input-bg: #ffffff;
-    --input-border: #cbd5e1;
-    --card-bg: rgba(255, 255, 255, 0.6);
-    --hover-bg: #f3f4f6;
-}
 
 /* Global Reset */
 *,
@@ -247,22 +224,6 @@ h6 {
     /* Apply the hover background */
 }
 
-/* Theme Toggle */
-.theme-toggle {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: transform 0.3s ease;
-    margin-right: 1rem;
-    margin-left: auto;
-    /* Push to right on mobile if needed */
-}
-
-.theme-toggle:hover {
-    transform: rotate(15deg) scale(1.1);
-}
 
 /* Mobile Nav Toggle */
 .mobile-toggle {
@@ -658,10 +619,6 @@ h6 {
     opacity: 1;
 }
 
-[data-theme="dark"] .footer {
-    background-color: var(--bg-white);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
 
 .footer-bottom p {
     color: #64748b;
