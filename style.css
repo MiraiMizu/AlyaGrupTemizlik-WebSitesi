@@ -688,7 +688,8 @@ h6 {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 3rem;
@@ -703,8 +704,20 @@ h6 {
 }
 
 .footer-links {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 1.5rem;
+    column-gap: 3rem;
+    flex-grow: 1;
+    margin: 0 4rem;
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 2rem;
+    }
 }
 
 .footer-links a {
