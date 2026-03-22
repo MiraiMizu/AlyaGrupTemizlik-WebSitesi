@@ -1,20 +1,16 @@
 /* Modern CSS Reset & Variables */
 :root {
-    /* Color Palette - Violet / Deep Obsidian */
+    /* Color Palette - Light Mode */
     --primary-color: #6A00FF;
-    /* Requested Violet */
-    --primary-dark: #4c00b0;
-    /* Darker Violet */
-    --secondary-color: #020617;
-    /* Deep Obsidian */
-    --accent-color: #a855f7;
-    /* Lighter Purple */
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --bg-white: #0f172a;
-    --bg-light: #020617;
-    --glass-bg: rgba(15, 23, 42, 0.9);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --primary-dark: #5800cc;
+    --secondary-color: #f3e8ff;
+    --accent-color: #7c3aed;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --bg-white: #ffffff;
+    --bg-light: #f8fafc;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(106, 0, 255, 0.12);
 
     /* Typography */
     --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
@@ -27,17 +23,17 @@
     --border-radius-lg: 2rem;
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.7);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.7);
-    --shadow-glow: 0 0 25px rgba(106, 0, 255, 0.4);
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 0 25px rgba(106, 0, 255, 0.25);
 
-    /* Component Backgrounds Dark */
-    --product-bg: #0f172a;
-    --input-bg: #1e293b;
-    --input-border: #334155;
-    --card-bg: rgba(15, 23, 42, 0.7);
-    --hover-bg: #1e293b;
+    /* Component Backgrounds Light */
+    --product-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-border: #cbd5e1;
+    --card-bg: rgba(255, 255, 255, 0.6);
+    --hover-bg: #f3f4f6;
 }
 
 
